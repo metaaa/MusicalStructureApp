@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructureapp.song1detailActivity"
+    android:background="#051721">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/yellow_submarine"/>
+
+            <SeekBar
+                android:id="@+id/song1seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:max="100"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/song1shuffle"
+                    style="@style/mpbtn"
+                    android:src="@drawable/shuffle"/>
+                <ImageButton
+                    android:id="@+id/song1prev"
+                    style="@style/mpbtn"
+                    android:src="@drawable/prev"/>
+                <ImageButton
+                    android:id="@+id/song1dplay"
+                    style="@style/mpbtn"
+                    android:src="@drawable/play"/>
+                <ImageButton
+                    android:id="@+id/song1next"
+                    style="@style/mpbtn"
+                    android:src="@drawable/next"/>
+                <ImageButton
+                    android:id="@+id/song1repeat"
+                    style="@style/mpbtn"
+                    android:src="@drawable/repeat"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/detailed_info"
+                android:text="@string/yellow_sm_detail"/>
+            <TextView
+                style="@style/detailed_info"
+                android:text="@string/detailed_descriptions"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

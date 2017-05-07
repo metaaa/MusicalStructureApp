@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructureapp.MainActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/logoRL"
+                android:layout_width="match_parent"
+                android:background="@drawable/music_bg"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:id="@+id/song1"
+                style="@style/menuRL">
+
+                <ImageButton
+                    android:id="@+id/song1play"
+                    android:src="@drawable/play"
+                    style="@style/playIMG"/>
+
+                <TextView
+                    android:id="@+id/song1artist"
+                    style="@style/artistStyle"
+                    android:layout_toRightOf="@id/song1play"
+                    android:text="@string/beatles"/>
+
+                <TextView
+                    android:id="@+id/song1title"
+                    style="@style/titleStyle"
+                    android:layout_toRightOf="@id/song1play"
+                    android:layout_below="@id/song1artist"
+                    android:text="@string/beatles_yellow_submarine"/>
+
+                <ImageButton
+                    android:id="@+id/song1fav"
+                    style="@style/favICO"
+                    android:src="@drawable/favorite"/>
+
+                <TextView
+                    android:id="@+id/song1hits"
+                    style="@style/hitStyle"
+                    android:text="Hits: 0"
+                    android:layout_toLeftOf="@id/song1fav"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/song2"
+                style="@style/menuRL">
+
+                <ImageButton
+                    android:id="@+id/song2play"
+                    android:src="@drawable/play"
+                    style="@style/playIMG"/>
+
+                <TextView
+                    android:id="@+id/song2artist"
+                    style="@style/artistStyle"
+                    android:layout_toRightOf="@id/song2play"
+                    android:text="@string/beatles"/>
+
+                <TextView
+                    android:id="@+id/song2title"
+                    style="@style/titleStyle"
+                    android:layout_toRightOf="@id/song2play"
+                    android:layout_below="@id/song2artist"
+                    android:text="@string/beatles_hard_days"/>
+
+                <ImageButton
+                    android:id="@+id/song2fav"
+                    style="@style/favICO"
+                    android:src="@drawable/favorite"/>
+
+                <TextView
+                    android:id="@+id/song2hits"
+                    style="@style/hitStyle"
+                    android:text="Hits: 0"
+                    android:layout_toLeftOf="@id/song2fav"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/song3"
+                style="@style/menuRL">
+
+                <ImageButton
+                    android:id="@+id/song3play"
+                    android:src="@drawable/play"
+                    style="@style/playIMG"/>
+
+                <TextView
+                    android:id="@+id/song3artist"
+                    style="@style/artistStyle"
+                    android:layout_toRightOf="@id/song3play"
+                    android:text="@string/beatles"/>
+
+                <TextView
+                    android:id="@+id/song3title"
+                    style="@style/titleStyle"
+                    android:layout_toRightOf="@id/song3play"
+                    android:layout_below="@id/song3artist"
+                    android:text="@string/beatles_twist_shout"/>
+
+                <ImageButton
+                    android:id="@+id/song3fav"
+                    style="@style/favICO"
+                    android:src="@drawable/favorite"/>
+
+                <TextView
+                    android:id="@+id/song3hits"
+                    style="@style/hitStyle"
+                    android:text="Hits: 0"
+                    android:layout_toLeftOf="@id/song3fav"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/song4"
+                style="@style/menuRL">
+
+                <ImageButton
+                    android:id="@+id/song4play"
+                    android:src="@drawable/play"
+                    style="@style/playIMG"/>
+
+                <TextView
+                    android:id="@+id/song4artist"
+                    style="@style/artistStyle"
+                    android:layout_toRightOf="@id/song4play"
+                    android:text="@string/beatles"/>
+
+                <TextView
+                    android:id="@+id/song4title"
+                    style="@style/titleStyle"
+                    android:layout_toRightOf="@id/song4play"
+                    android:layout_below="@id/song4artist"
+                    android:text="@string/beatles_let_it_be"/>
+
+                <ImageButton
+                    android:id="@+id/song4fav"
+                    style="@style/favICO"
+                    android:src="@drawable/favorite"/>
+
+                <TextView
+                    android:id="@+id/song4hits"
+                    style="@style/hitStyle"
+                    android:text="Hits: 0"
+                    android:layout_toLeftOf="@id/song4fav"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_description"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

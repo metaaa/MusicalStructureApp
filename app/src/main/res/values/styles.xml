@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--Style for the main screen-->
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+    <!--Style for the name of the application-->
+    <style name="app_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!--Style for the relative layouts that contain the song informations-->
+    <style name="menuRL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--Style for the logo-->
+    <style name="logoRL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+    <!--Style for the covers-->
+    <style name="playIMG">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">#0000</item>
+    </style>
+    <!--Style for the favorite buttons-->
+    <style name="favICO">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">#0000</item>
+    </style>
+    <!--Style for the name of the artists-->
+    <style name="artistStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <!--Style for the title of songs-->
+    <style name="titleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <!--Style for the hits text-->
+    <style name="hitStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--Style fot the go to library button-->
+    <style name="go_to_library">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+    <!--Style for the mplayer buttons-->
+    <style name="mpbtn">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">#0000</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <!--Style for the detailed text-->
+    <style name="detailed_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!--Style for the favourites list-->
+    <style name="favlist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>
