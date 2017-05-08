@@ -16,11 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".favsActivity" />
-        <activity android:name=".song1detailActivity" />
-        <activity android:name=".song2detail2Activity" />
-        <activity android:name=".song3detailActivity" />
-        <activity android:name=".song4detailActivity"></activity>
+        <activity android:name=".favsActivity"
+            android:label="@string/favourites"/>
+        <activity android:name=".song1detailActivity"
+            android:label="@string/beatles_yellow_submarine"/>
+        <activity android:name=".song2detail2Activity"
+            android:label="@string/beatles_hard_days"/>
+        <activity android:name=".song3detailActivity"
+            android:label="@string/beatles_twist_shout"/>
+        <activity android:name=".song4detailActivity"
+            android:label="@string/beatles_let_it_be">
+        </activity>
     </application>
 
 </manifest>
